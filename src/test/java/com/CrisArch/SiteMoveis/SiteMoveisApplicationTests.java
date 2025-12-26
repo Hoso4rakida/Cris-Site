@@ -1,10 +1,10 @@
-package com.CrisArchict.SiteVendas;
+package com.CrisArch.SiteMoveis;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SiteVendasApplicationTests {
+class SiteMoveisApplicationTests {
 
 	@Test
 	void contextLoads() {
