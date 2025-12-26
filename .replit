@@ -1,9 +1,10 @@
-modules = ["nodejs-20", "python-3.11", "web"]
+modules = ["nodejs-20", "java", "web"]
 [agent]
 expertMode = true
 
 [nix]
 channel = "stable-25_05"
+packages = ["openjdk17-bootstrap", "maven"]
 
 [workflows]
 runButton = "Project"
@@ -22,15 +23,15 @@ name = "Web Server"
 author = "agent"
 
 [[workflows.workflow.tasks]]
+name = "Backend"
 task = "shell.exec"
-args = "python -m http.server 5000 --bind 0.0.0.0"
-waitForPort = 5000
+args = "mvn spring-boot:run"
 
 [workflows.workflow.metadata]
 outputType = "webview"
 
 [[ports]]
-localPort = 5000
+localPort = 8080
 externalPort = 80
 
 [[ports]]
@@ -38,5 +39,5 @@ localPort = 5173
 externalPort = 5173
 
 [deployment]
-deploymentTarget = "static"
+deploymentTarget = "dynamic"
 publicDir = "."
