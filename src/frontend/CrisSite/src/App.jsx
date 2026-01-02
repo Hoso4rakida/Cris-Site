@@ -12,7 +12,7 @@ function App() {
         {/* Banner Principal */}
         <section 
           style={{ backgroundImage: `url(${banner})` }} 
-          className="relative w-full h-[400px] md:h-[600px] bg-cover bg-center bg-no-repeat overflow-hidden mt-16"
+          className="relative w-full h-[400px] md:h-[600px] bg-cover bg-center bg-no-repeat overflow-hidden"
         >
           <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/50 to-black/70"></div>
           

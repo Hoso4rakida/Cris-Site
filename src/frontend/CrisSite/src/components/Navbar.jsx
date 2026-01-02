@@ -1,15 +1,26 @@
 import React, { useState, useEffect } from "react"; // 1. Importamos o useEffect aqui
 import { Menu, X, Sofa, Moon, Sun } from "lucide-react"; // Adicionei ícones de sol e lua
+import { use } from "react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isDark, setIsDark] = useState(false);
   // 3. O useEffect observa a mudança do isDark
+useEffect(() => {
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme) {
+    setIsDark(savedTheme === 'dark');
+  }
+}, []);
+
+
   useEffect(() => {
     if (isDark) {
       document.documentElement.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
     } else {
       document.documentElement.classList.remove('dark');
+      localStorage.setItem('theme', 'light');
     }
   }, [isDark]);
 
