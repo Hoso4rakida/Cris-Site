@@ -4,7 +4,11 @@ import { Search, Filter, ArrowUpRight } from "lucide-react";
 function Catalogo() {
   const [categoriaAtiva, setCategoriaAtiva] = useState("Todos");
   const [busca, setBusca] = useState("");
+const WhatsappLink = "https://api.whatsapp.com/send?phone=5511965290048&text=Ol%C3%A1%2C%20Cris%21%20Gostaria%20de%20agendar%20uma%20reuni%C3%A3o%20para%20conversar%20sobre%20um%20projeto%20de%20arquitetura.%20Poderia%20me%20informar%20como%20funciona%20o%20seu%20processo%20de%20consultoria%3F";
 
+const OpenWhatsapp = () => {
+  window.open(WhatsappLink, "_blank");
+}
   const categorias = ["Todos", "Cozinha", "Dormitório", "Sala", "Escritório", "Banheiro"];
 
   // Produtos de exemplo
@@ -219,7 +223,7 @@ function Catalogo() {
         <p className="text-lg text-stone-600 dark:text-stone-400 mb-6 max-w-2xl mx-auto">
           Criamos projetos totalmente personalizados para atender suas necessidades específicas.
         </p>
-        <button className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 rounded-lg font-bold transition-all hover:scale-105 shadow-lg">
+        <button className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 rounded-lg font-bold transition-all hover:scale-105 shadow-lg" onClick={OpenWhatsapp}>
           Solicite seu Projeto Personalizado
         </button>
       </div>

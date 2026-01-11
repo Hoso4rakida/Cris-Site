@@ -3,6 +3,12 @@ import Portfolio from "./components/Portfolio"; // Sugestão: renomear Catalogo 
 import { Phone, Mail, MapPin, Instagram, Facebook, Linkedin, ArrowRight, Ruler, ClipboardCheck, PenTool } from "lucide-react";
 import banner from "./assets/image1.webp";
 
+const WhatsappLink = "https://api.whatsapp.com/send?phone=5511965290048&text=Ol%C3%A1%2C%20Cris%21%20Gostaria%20de%20agendar%20uma%20reuni%C3%A3o%20para%20conversar%20sobre%20um%20projeto%20de%20arquitetura.%20Poderia%20me%20informar%20como%20funciona%20o%20seu%20processo%20de%20consultoria%3F";
+
+const OpenWhatsapp = () => {
+  window.open(WhatsappLink, "_blank");
+}
+
 function App() {
   return (
     <div className="min-h-screen bg-stone-50 dark:bg-stone-900 text-stone-900 dark:text-stone-50 transition-colors duration-500">
@@ -23,7 +29,7 @@ function App() {
             <p className="text-white/90 text-lg md:text-xl max-w-2xl mb-8">
               Projetos arquitetônicos, interiores e consultoria técnica com foco em bem-estar e funcionalidade.
             </p>
-            <button className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all hover:scale-105 flex items-center gap-2">
+            <button className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all hover:scale-105 flex items-center gap-2" onClick={OpenWhatsapp}>
               Agende uma Reunião
               <ArrowRight size={20} />
             </button>
@@ -141,13 +147,9 @@ function App() {
               Desde uma pequena reforma até grandes construções residenciais e comerciais.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-amber-600 text-white px-8 py-4 rounded-lg font-bold hover:bg-amber-700 transition-all hover:scale-105 flex items-center justify-center gap-2">
-                <Phone size={20} />
+              <button className="bg-amber-600 text-white px-8 py-4 rounded-lg font-bold hover:bg-amber-700 transition-all hover:scale-105 flex items-center justify-center gap-2" onClick={OpenWhatsapp}>
+                <Phone size={20}/>
                 Agendar Consultoria
-              </button>
-              <button className="border-2 border-white/20 text-white px-8 py-4 rounded-lg font-bold hover:bg-white/10 transition-all flex items-center justify-center gap-2">
-                <Mail size={20} />
-                Solicitar Proposta
               </button>
             </div>
           </div>
