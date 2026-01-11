@@ -14,8 +14,8 @@ function Catalogo() {
       nome: "Cozinha Moderna Premium",
       categoria: "Cozinha",
       preco: "A partir de R$ 12.000",
-      imagem: "https://images.unsplash.com/photo-1556912167-f556f1f39faa?w=400&h=300&fit=crop",
-      descricao: "Acabamento em laca branca brilhante com bancada de quartzo"
+      imagem: "https://i.imgur.com/ZehfRex.jpeg",
+      descricao: "Acabamento em branco brilhante com bancada de quartzo"
     },
     {
       id: 2,
@@ -30,7 +30,7 @@ function Catalogo() {
       nome: "Sala de Estar Integrada",
       categoria: "Sala",
       preco: "A partir de R$ 8.000",
-      imagem: "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400&h=300&fit=crop",
+      imagem: "https://images.pexels.com/photos/1643383/pexels-photo-1643383.jpeg",
       descricao: "Rack + painel + prateleiras decorativas + nicho"
     },
     {
@@ -38,7 +38,7 @@ function Catalogo() {
       nome: "Home Office Executivo",
       categoria: "Escritório",
       preco: "A partir de R$ 6.000",
-      imagem: "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?w=400&h=300&fit=crop",
+      imagem: "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=400&h=300&fit=crop",
       descricao: "Mesa ampla + estante + armário suspenso + gaveteiro"
     },
     {
@@ -46,7 +46,7 @@ function Catalogo() {
       nome: "Cozinha Clássica Amadeirada",
       categoria: "Cozinha",
       preco: "A partir de R$ 10.000",
-      imagem: "https://images.unsplash.com/photo-1565183928294-7d22f6959e2e?w=400&h=300&fit=crop",
+      imagem: "https://images.pexels.com/photos/534151/pexels-photo-534151.jpeg",
       descricao: "Acabamento em madeira natural com detalhes em vidro"
     },
     {
@@ -62,7 +62,7 @@ function Catalogo() {
       nome: "Quarto Infantil Planejado",
       categoria: "Dormitório",
       preco: "A partir de R$ 9.000",
-      imagem: "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=400&h=300&fit=crop",
+      imagem: "https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg",
       descricao: "Cama com gavetas + guarda-roupa + escrivaninha + prateleiras"
     },
     {
@@ -78,7 +78,7 @@ function Catalogo() {
       nome: "Closet Planejado",
       categoria: "Dormitório",
       preco: "A partir de R$ 20.000",
-      imagem: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=300&fit=crop",
+      imagem: "https://images.pexels.com/photos/3315286/pexels-photo-3315286.jpeg",
       descricao: "Closet completo com iluminação LED e espelho grande"
     }
   ];
